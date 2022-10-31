@@ -1,0 +1,161 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+html{
+  font-size: 10px;
+}
+/* Nguyễn Minh Quân-20520710 */
+@font-face {
+  font-family: myLovato;
+  src: url(Lovato\ Light.otf);
+}
+@font-face {
+  font-family: myJosefinSlab;
+  src: url(JosefinSlab-Bold.ttf);
+}
+/* Nguyễn Minh Quân-20520710 */
+body{
+  font-family: myLovato;
+  font-size: 1.6rem;
+  margin-left: 10px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+/* Nguyễn Minh Quân-20520710 */
+header{
+  font-family:myJosefinSlab;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+h2{
+  font-family: myJosefinSlab;
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+/* Nguyễn Minh Quân-20520710 */
+p, ul, ol{
+  margin: 16px 16px;
+  font-size: 1.6rem;
+}
+
+p, li{
+  line-height: 1.6;
+}
+   
+section h2 + p{
+  text-indent: 20px;
+}
+/* Nguyễn Minh Quân-20520710 */
+a:link {
+  color:#a66;
+}
+a:visited {
+  color:#a66;
+}
+/* Nguyễn Minh Quân-20520710 */
+a:focus {
+  color:#a66;
+  text-decoration: none; 
+  outline: none;  
+}
+/* Nguyễn Minh Quân-20520710 */
+a:active{
+  color:red;
+  text-shadow: 0.5px 0.5px 1px black;
+}
+a:hover {
+  color:#a66;
+  text-decoration: none;
+}
+/* Nguyễn Minh Quân-20520710 */
+aside ul{
+  line-height: normal;
+  letter-spacing: 1.5px;
+  word-spacing: 1.5px;
+}
+aside p{
+  line-height: 20px;
+}
+
+nav ul{
+  list-style-type: none;
+}
+/* Nguyễn Minh Quân-20520710 */
+ul{
+  list-style-type: square;
+}
+ol{
+  list-style-type: lower-alpha;
+}
+nav ul li a{
+  background-color: white; 
+  border: 1px solid #a66;
+  color: #a66;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.6rem;
+  text-decoration: none;
+  margin: 10px 3px;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  width: 180px;
+}  
+nav ul li a:hover{
+  background-color: #a66;
+  color: white;
+  /* Nguyễn Minh Quân-20520710 */
+}
+section p a::after {
+  content: "";
+  background-image:url("external-link-52.png"); 
+  background-size: 100% 100%;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin-left: 1px;
+}
